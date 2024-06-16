@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "loan_app_container",
-            "image": "399750257186.dkr.ecr.us-east-1.amazonaws.com/loan_flask_app:latest",
+            "image": "399750257186.dkr.ecr.us-east-1.amazonaws.com/loan_flask_app:21dbcbbb2ce1704a9073b376ac8150dd01304bfa",
             "cpu": 0,
             "portMappings": [
                 {
