@@ -15,7 +15,7 @@ clf = pickle.load(model_pickle)
 #### method is depending on requirement
 @app.route("/ping",methods = ["GET"])
 def ping():
-    return {'message':"Hi there, I'm Jeet !"}
+    return {'message':"Hi there, I'm Jeet !!"}
 
 ## defining endpoint function that makes the prediction
 @app.route("/predict", methods=['POST'])
