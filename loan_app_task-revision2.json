@@ -12,7 +12,7 @@
                     "hostPort": 80,
                     "protocol": "tcp",
                     "appProtocol": "http"
-                }
+                } 
             ],
             "essential": true,
             "environment": [],
