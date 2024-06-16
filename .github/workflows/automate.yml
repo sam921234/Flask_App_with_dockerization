@@ -1,4 +1,4 @@
-name: Run Python Tests
+name: CI CD Process
 
 on:
   push:
@@ -59,7 +59,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: loan_app_task-revision2.json
-          container-name: my-container
+          container-name: loan_app_container
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
@@ -69,4 +69,5 @@ jobs:
           service: loan_app_service
           cluster: loan_app_cluster
           wait-for-service-stability: true
+        
 
